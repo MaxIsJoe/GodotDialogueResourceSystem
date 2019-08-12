@@ -45,3 +45,6 @@ func _on_Area2D_body_entered(body):
 -----------------------------
 
 `updateDialouge()` : Checks for player Input to display the next string in the Strings array that was loaded, It runs in `_process(delta)` so it doesn't need to be called from elsewhere.
+
+### Can I Improve on this?
+You can pretty much do anything with this, add choices, music, whatever, just try to credit me if you're going to use this in your project one day :) and I also welcome any new pull requests that adds new stuff to this repo as well
