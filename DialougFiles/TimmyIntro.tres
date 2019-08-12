@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/DialougeClass.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+Strings = [ "Hm? Oh hi!", "I'm [color=red]Timmy![/color]", "And I'm huunnngrry" ]
+Names = [ "?????", "Timmy", "Timmy" ]

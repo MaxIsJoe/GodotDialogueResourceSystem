@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/Actors/Player/Player.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Actors/Player/Control.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 24.2796, 24.5989 )
+
+[node name="Player" type="KinematicBody2D" groups=[
+"Player",
+]]
+z_index = 2
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+limit_smoothed = true
+smoothing_enabled = true
+smoothing_speed = 15.0
+drag_margin_left = 0.0
+drag_margin_top = 0.0
+drag_margin_right = 0.0
+drag_margin_bottom = 0.0
+editor_draw_limits = true
+editor_draw_drag_margin = true
+
+[node name="DiaUI" parent="Camera2D" instance=ExtResource( 3 )]
+margin_left = -500.989
+margin_top = -286.999
+margin_right = -500.989
+margin_bottom = -286.999
+[connection signal="AllowMovement" from="Camera2D/DiaUI" to="." method="_on_DiaUI_AllowMovement"]
+[connection signal="StopMovement" from="Camera2D/DiaUI" to="." method="_on_DiaUI_StopMovement"]

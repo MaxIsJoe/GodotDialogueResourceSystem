@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/DialougeClass.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+Strings = [ "Hello there, Young Paladin", "Are You here to seek an Epic Quest?", "Then you have come to the right place", "Follow the Light at the end of the tunnel", "and you'll find your epic quest", "In a far, far land away from here" ]
+Names = [ "Speaker #1", "Speaker #2", "Speaker #1", "Speaker #2", "Speaker #1", "Speaker #1 & 2" ]

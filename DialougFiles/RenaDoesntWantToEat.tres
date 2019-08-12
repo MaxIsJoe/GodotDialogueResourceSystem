@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/DialougeClass.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+Strings = [ "I'm not hungry anymore", "Here, Take this mister!", "[center]You got a [img]res://Textures/burger-512.png[/img] Hamburger![/center]" ]
+Names = [ "Girl In Pink", "Girl In Pink", "." ]
